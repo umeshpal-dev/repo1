@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<form name="frm" onsubmit="return demo()"> 
+<select>
+<option>-----SELECT------</option>
+<option>SUMMER TRAINING</option>
+<option>VOCATIONAL TRAINING</option>
+<option>WINTER TRAINING</option>
+</select>
+<p></P>
+<input type="submit">
+</form>
+<script>
+"use strict"
+var demo=()=>
+{
+var ddl=document.querySelector("select")
+var prr=document.querySelector("p")
+//alert(ddl.value)
+if(ddl.value=="-----SELECT------")
+{
+prr.innerText="please select any option";
+prr.style.color="red";
+return false
+}
+
+}
+
+</script>
+</body>
+<html>

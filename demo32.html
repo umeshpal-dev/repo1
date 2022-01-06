@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+<img src="image/20.jpg" id="um1" height="200px">
+<img src="image/22.jpg" id="um2" height="200px">
+<button onclick="demo()">SWAP</button>
+<script>
+function demo()
+{
+var a=document.getElementById("um1")
+var b=document.getElementById("um2")
+var c1=a.src;
+var c2=b.src;
+a.src=c2;
+b.src=c1;
+}
+setInterval("demo()",2000)
+
+
+
+</script>
+</body>
+</html>

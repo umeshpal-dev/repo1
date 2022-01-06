@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+.txt
+{
+background:red;
+color:white;
+text-align:center;
+font-family:arial;
+text-shadow:2px 2px 0px black;
+box-shadow:5px 5px 2px 0px green;
+}
+</style>
+</head>
+<body>
+<h1 class="txt" id="t1">HONESTY IS THE BEST POLICY<h1>
+<h1 class="txt" id="t2">WELCOME TO THE TECHPILE<h1>
+<h1 class="txt" id="t3">WELCOME TO THE WORLD JAVA SCRIPT<h1>
+<h1 class="txt" id="t4">WELCOME TO THE H1 TAG<h1>
+<h1 class="txt" id="t5">OLD IS GOLD <h1>
+<h1 class="txt" id="t6">SILENCE IS THE BEST ANSWER OF STUPID QUESTION<h1>
+<h1 class="txt" id="t7">SMILE IS THE BEST SOLUTION OF CRITICAL SITUATION <h1>
+<h1 class="txt" id="t8">A SILENT PRAY IS BETTER THAN SEVENTY TIME LOUD<h1>
+<h1 class="txt" id="t9">SOMETHING IS GREATER THAN NOTHING<h1>
+<h1 class="txt" id="t10">ALL THAT GLITTER IS NOT GOLD<h1>
+<button>SWAP</button>
+<script>
+function demo()
+{
+var s1=document.getElementById("t1");
+var s2=document.getElementById("t2");
+var s3=document.getElementById("t3");
+var s4=document.getElementById("t4");
+var s5=document.getElementById("t5");
+var s6=document.getElementById("t6");
+var s7=document.getElementById("t7");
+var s8=document.getElementById("t8");
+var s9=document.getElementById("t9");
+var s10=document.getElementById("t10");
+
+var a1=s1.innerText;
+var a2=s2.innerText;
+var a3=s3.innerText;
+var a4=s4.innerText;
+var a5=s5.innerText;
+var a6=s6.innerText;
+var a7=s7.innerText;
+var a8=s8.innerText;
+var a9=s9.innerText;
+var a10=s10.innerText;
+
+s1.innerText=a2;
+s2.innerText=a3;
+s3.innerText=a4;
+s4.innerText=a5;
+s5.innerText=a6;
+s6.innerText=a7;
+s7.innerText=a8;
+s8.innerText=a9;
+s9.innerText=a10;
+s10.innerText=a1;
+}
+
+setInterval("demo()",3000);
+</script>
+</body>
+</html>

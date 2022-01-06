@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<body>
+<p id="p1"></p>
+<div id="dv"></div>
+<script>
+var p=document.getElementById("p1")
+var fruits=["PINE APPLE","DATE","MANGO","BANANA","GRAPE"]
+var res="<select onchange='demo(this)'>"
+for(i=0;i<fruits.length;i++)
+{
+res=res+"<option>"+fruits[i]+"</option>"
+}
+res=res+"</select>"
+p.innerHTML=res;
+
+function demo(y)
+{
+var dv=document.getElementById("dv")
+if(y.value=="PINE APPLE")
+{
+dv.innerHTML=y.value;
+}
+if(y.value=="DATE")
+{
+dv.innerHTML=y.value
+}
+if(y.value=="MANGO")
+{
+dv.innerHTML=y.value
+}
+if(y.value=="GRAPE")
+{
+dv.innerHTML=y.value
+}
+dv.style.background="red"
+
+}
+</script>
+</body>
+</html>

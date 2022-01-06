@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+#umesh
+{
+height:350px;
+width:750px;
+border:10px solid red;
+padding:10px;
+margin-left:250px;
+}
+
+.jjk
+{
+height:150px;
+width:250px;
+border:5px solid red;
+padding:5px;
+}
+</style>
+</head>
+<body>
+<img src="image/24.jpg" onmouseover="demo(this)" id="umesh"><br/>
+<img src="image/25.jpg" onmouseover="demo(this)" class="jjk" style="margin-left:100px;">
+<img src="image/26.jpg" onmouseover="demo(this)" class="jjk">
+<img src="image/23.jpg" onmouseover="demo(this)" class="jjk">
+<img src="image/28.jpg" onmouseover="demo(this)" class="jjk">
+
+
+<script>
+function demo(b)
+{
+var a=document.getElementById("umesh")
+a.src=b.src
+}
+</script>
+</body>
+</html>

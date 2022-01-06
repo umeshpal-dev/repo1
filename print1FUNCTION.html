@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+</style>
+<title>TECHPILE
+</title>
+</head>
+<body>
+<div id="box">
+<h1>THIS IS MY FIRST WEB PAGE</h1>
+<p>this is print function this is print function this is print function 
+this is print function this is print function this is print function 
+this is print function this is print function this is print function 
+this is print function this is print function this is print function 
+this is print function this is print function this is print function 
+this is print function this is print function this is print function </p>
+</div>
+<button onclick="demo()">PRINT</button>
+<script>
+/*var a=document.head.innerHTML
+//var a=document.all
+//var a=document.body.innerHTML
+var a=document.URL
+alert(a);
+//console.log(a)*/
+function demo()
+{
+var a=document.getElementById("box").innerHTML
+document.body.innerHTML=a
+window.print()
+}
+
+</script>
+</body>
+</html>

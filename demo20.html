@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+h1{
+background:red;
+color:white;
+border:5px groove yellow;
+}
+</style>
+</head>
+<body>
+<h1 id="h1">WELCOME TO THE          WORLD OF JS</h1>
+<h1 id="h2">WELCOME TO THE TECHPILE TECHNOLOGY</h1>
+<button onclick="demo()">SWAP TEXT</button>
+<script>
+function demo()
+{
+var head1=document.getElementById("h1")
+var head2=document.getElementById("h2")
+var text1=head1.innerText
+var text2=head2.innerText
+head1.innerText=text2
+head2.innerText=text1
+
+}
+</script>
+</body>
+</html>

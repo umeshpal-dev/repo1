@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<div id="dv"></div>
+<input type="text" id="txt">
+<button onclick="demo()">SQUAREIT</button>
+<script>
+function demo()
+{
+var dv=document.getElementById("dv")
+var a=parseInt(document.getElementById("txt").value)
+res="";
+for(let i=0;i<=a;i++)
+{
+res+=i*i+"<br>";
+dv.innerHTML=res;
+dv.style.background="yellow";
+}
+}
+</script>
+</body>
+</html>

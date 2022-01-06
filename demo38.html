@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="txt1">
+<input type="text" id="txt2">
+<input type="text" id="txt3">
+<button ondblclick="demo()">add</button>
+<script>
+function demo()
+{
+var a=parseInt(document.getElementById("txt1").value);
+var b=parseInt(document.getElementById("txt2").value);
+var c=document.getElementById("txt3");
+var res=a+b;
+c.value=res;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+#box
+{
+height:400px;
+width:400px;
+background:blue;
+}
+</style>
+</head>
+<body>
+<div id="box"></div><br/>
+<button onclick="red()">RED</button>
+<button  onclick="green()">GREEN</button>
+<button onclick="yellow()">YELLOW</button>
+<button onclick="black()">BLACK</button>
+<script>
+function red()
+{
+var a=document.getElementById("box")
+a.style.background="red";
+}
+function green()
+{
+var a=document.getElementById("box")
+a.style.background="green";
+}
+function yellow()
+{
+var a=document.getElementById("box")
+a.style.background="yellow";
+}
+function black()
+{
+var a=document.getElementById("box")
+a.style.background="black";
+}
+</script>
+</body>
+</html>

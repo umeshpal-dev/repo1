@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<form action="" onsubmit="demo(event)">
+<input type="text" id="txt1">
+<input type="submit" >
+<p><p>
+</form>
+<script>
+function demo(x)
+{
+var msg=document.querySelector("p")
+//x.preventDefault();
+var v=document.querySelector("#txt1").value
+if(v.length<3 || v.length>50)
+{
+msg.innerText="invalid inputted text";
+msg.style.color="red";
+x.preventDefault();
+}
+
+}
+</script>
+</body>
+</html>

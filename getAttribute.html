@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+
+</style>
+<head>
+<body>
+<img src="image/24.jpg" height="500px">
+<button onclick="demo()">GET</button>
+<button onclick="demo1()">SET</button>
+<script>
+function demo()
+{
+var a=document.querySelector("img")
+alert(a.getAttribute("height"))
+alert(a.getAttribute("src"))
+
+}
+function demo1()
+{
+document.querySelector("img").setAttribute("src","image/28.jpg");
+document.querySelector("img").setAttribute("height","800px");
+
+
+}
+</script>
+</body>
+</html>

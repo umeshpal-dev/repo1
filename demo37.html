@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+#txt
+{
+height:350px;
+width:750px;
+border:10px solid red;
+padding:10px;
+}
+
+.txt1
+{
+height:250px;
+width:250px;
+border:5px solid red;
+padding:5px;
+}
+</style>
+</head>
+<body>
+<img src="image/36.jpg" onclick="demo(this)" id="txt">
+<img src="image/40.jpg" onclick="demo(this)" class="txt1">
+<img src="image/42.jpg" onclick="demo(this)" class="txt1">
+<img src="image/38.jpg" onclick="demo(this)" class="txt1">
+
+<script>
+function demo(b)
+{
+var a=document.getElementById("txt")
+a.src=b.src;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<input type="file" onchange="demo(this)" id="fu">
+<p id="p1">
+</p>
+<script>
+function demo(x)
+{
+//alert(x.value)
+var path=x.value;
+//alert(path)
+var exp=path.substring(path.lastIndexOf(".")+1).toUpperCase();
+//alert(exp)
+var p=document.getElementById("p1")
+if(exp=="JPG" || exp=="PNG" || exp=="JPEG")
+{
+p.innerText="valid image"
+p.style.color="green";
+}
+else
+{
+p.innerText="invalid image"
+p.style.color="red";
+}
+
+}
+</script>
+</body>
+</html>

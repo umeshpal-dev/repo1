@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="demo1()" onclick="demo2()" onclick="demo3()">CALL ME</button>
+<script>
+var demo1=()=>
+{
+alert("am funcftion 1")
+}
+
+var demo2=()=>
+{
+alert("am funcftion 2")
+}
+
+var demo3=()=>
+{
+alert("am funcftion 3")
+}
+var obj=document.querySelector("button")
+obj.addEventListener("click",demo1())
+obj.addEventListener("click",demo2())
+obj.addEventListener("click",demo3())
+
+</script>
+</body>
+</html>

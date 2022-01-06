@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+<form onsubmit="return demo()" name="frm">
+SELECT COURSE<input type="radio" class="a" name="c">HTML
+<input type="radio" class="a" name="c">CSS
+<input type="radio" class="a" name="c">JS
+<input type="radio" class="a" name="c">JQ<br>
+<input type="submit" value="SAVE">
+</form>
+<p></p>
+<script>
+function demo()
+{
+var count=0;
+var rbtn=document.getElementsByClassName("a");
+for(var x of rbtn)
+{
+if(x.checked==true)
+{
+count++;
+}
+}
+ if(count==0)
+{
+document.querySelector("p").innerText="please select any one";
+document.querySelector("p").style.color="red";
+return false;
+}
+}
+</script>
+</body>
+</html>

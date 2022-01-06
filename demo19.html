@@ -1,0 +1,30 @@
+<html>
+<head>
+
+</head>
+<body>
+<input type="text" id="txt1"><br/>
+<br/>
+
+<input type="tex" id="txt2"><br/>
+<input type="tex" id="txt3" >
+
+<button onclick="demo()">ADD
+</button>
+<script>
+function demo()
+{
+//var name=document.getElementById("txt1").value="umesh"
+var name1=document.getElementById("txt1").value
+var name2=document.getElementById("txt2").value
+var x=document.getElementById("txt3")
+var res=parseFloat(name1)+parseFloat(name2)
+x.value=res.toFixed(3);
+
+
+}
+
+
+</script>
+</body>
+</html>

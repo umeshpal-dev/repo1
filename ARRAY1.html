@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<p id="p1"></p>
+<script>
+var p=document.getElementById("p1")
+var arr=["HTML","CSS","JAVASCRIPT","JQUERY"]
+var res="<select>"
+for(var i=0;i<arr.length;i++)
+{
+//alert(arr[i])
+res=res+"<option>"+arr[i]+"</option>"
+}
+res+="</select>"
+p.innerHTML=res;
+</script>
+</body>
+</html>

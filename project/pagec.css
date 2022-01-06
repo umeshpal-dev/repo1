@@ -1,0 +1,104 @@
+
+#outer
+{
+	min-height:600px;
+	width:1300px;
+	margin:0px auto;
+	background:red;
+}
+
+#navbar
+{
+	height:50px;
+	width:100%;
+    background:#22ddca;
+	position:sticky;
+	top:0px;
+
+}
+
+#logo
+{
+	height:50px;
+	width:300px;
+	float:left;
+	text-align:center;
+	line-height:50px;
+	font-family:arial;
+	font-weight:bold;
+	text-shadow:2px 2px 0px gray;
+	
+}
+#menu
+{
+	height:50px;
+	width:1000px;
+	float:left;
+}
+
+#menu ul
+{
+	list-style:none;
+}
+
+#menu ul li
+{
+	float:left;
+	width:130px;
+	font-family:arial;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	transform:translatey(-12px);
+transition:1s;	
+}
+
+
+#menu ul li:hover
+{
+	background:orange;
+	transition:1s;
+}
+#slider
+{
+	min-height:550px;
+	width:100%;
+	background:url(image/24.jpg);
+	background-size:cover;
+	animation-name:umesh;
+	animation-duration:8s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes umesh
+{
+	0%
+	{
+		background:url(image/7.jpg);
+		background-size:cover;
+	}
+		25%
+	{
+		background:url(image/8.jpg);
+				background-size:cover;
+
+	}
+		50%
+	{
+		background:url(image/9.jpg);
+				background-size:cover;
+
+	}
+		100%
+	{
+		background:url(image/10.jpg);
+				background-size:cover;
+
+	}
+}
+
+#menu a
+{
+	color:white;
+	font-size:20px;
+}

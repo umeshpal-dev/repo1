@@ -1,0 +1,53 @@
+<html>
+</head>
+<style>
+#box
+{
+height:auto;
+width:400px;
+padding:30px;
+margin:100px auto;
+border:2px solid red;
+}
+
+#inner
+{
+height:50px;
+width:50px;
+border:1px solid black;
+}
+</style>
+</head>
+<body onload="demo()">
+<div id="box"> 
+<div id="inner"> </div><br>
+<input type="text" id="txt"><br><br>
+<button>SET </button>
+</div>
+<body onclick="demo1()">
+<script>
+function demo()
+{
+var chr="0123456789abcdef";
+var color="#"
+
+for(i=0;i<6;i++)
+{
+var rindex=Math.floor(Math.random()*chr.length);//0 to 15
+color+=chr.charAt(rindex);
+}
+document.getElementById("inner").style.background=color;
+document.getElementById("txt").value=color;
+}
+
+window.setInterval(demo,2000);
+
+function demo1()
+{
+var dv=document.getElementById("box");
+var color=document.getElementById("txt").value;
+dv.style.background=color;
+
+}
+</script>
+</html>

@@ -1,0 +1,26 @@
+<script>
+var studentInfo=[
+{name:"ram",college:"CICST",branch:"CS"},
+{name:"umesh",college:"CIC",branch:"IT"},
+{name:"OMPRAKSH",college:"JIC",branch:"MACHNICAL"}, //trailing comma.
+]
+
+<!-- document.write(`NAME IS : ${studentInfo[0].name}<br> COLLGE IS : ${studentInfo[0].college}<br> -->
+<!-- BRANCH IS : ${studentInfo[0].branch}`) -->
+
+var res="<table border='1' cellspacing='0'><tr><th>NAME</th><th>college</th><th>branch</th></tr>"
+for(var i=0;i<studentInfo.length;i++)
+{
+res=res+"<tr onclick='demo(this)'><td>"+studentInfo[i].name+"</td><td>"+studentInfo[i].college+"</td><td>"+studentInfo[i].branch+"</td></tr>"
+}
+res+="</table>"
+document.write(res)
+var demo=(x)=>
+{
+var a=confirm("do you want to hide this");
+if(a==true)
+{
+x.style.display="none";
+}
+}
+</script>

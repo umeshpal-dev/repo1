@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+#box
+{
+height:500px;
+width:1000px;
+background:url('image/24.jpg');
+border:10px solid red;
+background-size:cover;
+}
+
+#inner
+{
+height:500px;
+width:1000px;
+background:rgba(0,0,0,.5);
+line-height:500px;
+text-align:center;
+font-size:40px;
+color:white;
+}
+
+</style>
+</head>
+<body >
+<center>
+<h1>TEXT SLIDER</h1>
+<div id="box">
+<div id="inner">WELCOME TO THE WORLD JS</div>
+</div>
+</center>
+<script>
+var arr=["2.jpg","2.jpg","28.jpg","5.jpg"]
+var txt=["SUMMER T","W TRAINING","APPRENTICESHIP","VOCATIONAL","INDUTRIAL"]
+var color=["rgba(234,12,23.6)","rgba(255,0,0.6)","rgba(0,0,255.6)","rgba(255,255,255.6)"]
+var i=0;
+function slider()
+{
+var dv=document.getElementById("box")
+var dv1=document.getElementById("inner")
+dv.style.background="url('image/"+arr[i]+"')";
+dv.style.backgroundSize="cover";
+dv1.innerText=txt[i];
+dv1.style.background="color[i]"
+i++;
+if(i==arr.lenght)
+i=0;
+}
+function demo1()
+{
+a=window.setInterval(slider,1000)
+}
+
+function demo2()
+{
+clearInterval(a)
+}
+</script>
+<button onclick="demo1()">START</button>
+<button onclick="demo2()">STOP2</button>
+
+</body>
+</html>

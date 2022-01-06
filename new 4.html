@@ -1,0 +1,55 @@
+<html>
+<head>
+</head>
+<body>
+<p id="txt1"></p>
+<p id="txt2"></p>
+
+<script>
+var pt=document.getElementById("txt1")
+var arr=["UP","MP","BIHAR"]
+var Ucity=["lucknow","allahabad","kanpur"]
+var Mcity=["bhopal","rewa","satna"]
+var Bcity=["patna","allah"]
+
+var res="<select onchange='demo1(this)'>";
+arr.forEach(function demo(x){
+res=res+"<option>"+x+"</option>";
+})
+res+="</select>"
+pt.innerHTML=res;
+
+
+var pt1=document.getElementById("txt2")
+
+function demo1(y)
+{
+var res1="<select>"
+if(y.value=="MP")
+{
+Mcity.forEach(function(y1){
+res1=res1+"<option>"+y1+"</option>"
+})
+}
+
+else if(y.value=="UP")
+{
+Ucity.forEach(function(y2){
+res1=res1+"<option>"+y2+"</option>"
+})
+}
+
+else if(y.value=="BIHAR")
+{
+Bcity.forEach(function(y3){
+res1=res1+"<option>"+y3+"</option>"
+})
+}
+res1=res1+"<select>"
+pt1.innerHTML=res1;
+
+}
+
+</script>
+</body>
+</html>

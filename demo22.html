@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+#box1
+{
+height:250px;
+width:250px;
+background:red;
+}
+</style>
+</body>
+<input type="password" id="txt">
+<input type="button"  onclick="demo()" value="show password" id="btn">
+
+<script>
+function demo()
+{
+var t=document.getElementById("txt")
+var b=document.getElementById("btn")
+if(b.value=="show password")
+{
+b.value="hide password";
+t.type="text";
+b.style.background="red";
+b.style.color="white";
+}
+else
+{
+b.value="show password";
+t.type="password";
+b.style.background="green";
+b.style.color="white";
+}
+}
+
+
+</script>
+</html>

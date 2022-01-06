@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<input type="text" id="txt">
+<div id="dv"></div>
+<button onclick="demo()">CALL ME</button>
+<script>
+function demo()
+{
+var a=parseInt(document.getElementById("txt").value)
+var b=document.getElementById("dv")
+res="";
+for(var i=1;i<=10;i++)
+{
+res+=a*i+"<br>";
+b.innerHTML=res;
+b.style.background="pink";
+}
+
+
+}
+
+</script>
+</body>
+</html>

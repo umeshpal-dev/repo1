@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+#img
+{
+height:350px;
+width:800px;
+border:10px solid green;
+padding:10px;
+}
+
+.img1
+{
+height:250px;
+width:250px;
+border:5px solid green;
+padding:5px;
+}
+</style>
+<head>
+</head>
+<body>
+<img src="image/24.jpg" onmouseover="demo(this)"   id="img">
+<img src="image/25.jpg" onmouseover="demo(this)"  class="img1">
+<img src="image/26.jpg" onmouseover="demo(this)" class="img1">
+<img src="image/21.jpg" onmouseover="demo(this)"  class="img1">
+<img src="image/28.jpg" onmouseover="demo(this)" class="img1">
+<script>
+function demo(b)
+{
+var a=document.getElementById("img")
+a.src=b.src;
+}
+</script>
+</body>
+</html>

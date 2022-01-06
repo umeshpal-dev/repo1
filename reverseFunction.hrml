@@ -1,0 +1,5 @@
+<script>
+Var arr=[“HTML,”CSS”,”JS ”,”HTML”,”PYTHON”,”PHP”]
+Alert(arr)
+Alert(arr.reverse())
+</script>

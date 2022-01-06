@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+div
+{
+height:200px;
+width:200px;
+background:red;
+color:white;
+line-height:200px;
+float:left;
+border:5px solid yellow;
+}
+.a
+{
+transform:rotate(-45deg);
+color:green;
+background:orange;
+text-align:center;
+transition:all ease 1s;
+
+}
+.b
+{
+transform:rotate(45deg);
+color:white;
+background:maroon;
+transition:all ease 1s;
+}
+</style>
+</head>
+<body>
+<div id="box1">TECHPILE</div>
+<div id="box2">TECHNOLOGY</div>
+<button onclick="demo()">ADD</button>
+<button onclick="demo1()">REMOVE</button>
+<button onclick="demo2()">TOGGLE</button>
+<button onclick="demo3()">contains</button>
+
+<script>
+function demo()
+{
+document.querySelector("#box1").classList.add('a')
+document.querySelector("#box2").classList.add('b')
+}
+
+function demo1()
+{
+document.querySelector("#box1").classList.remove('a')
+document.querySelector("#box2").classList.remove('b')
+}
+function demo2()
+{
+document.querySelector("#box1").classList.toggle('a')
+document.querySelector("#box2").classList.toggle('b')
+}
+
+function demo3()
+{
+var a=document.querySelector("#box1").classList.contains('a')
+alert(a)
+}
+</script>
+</body>
+</html>

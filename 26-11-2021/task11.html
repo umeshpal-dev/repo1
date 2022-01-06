@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="txt1"><br/>
+<button onclick="demo()">ok</button>
+<script>
+/*var a=document.getElementById("inp");
+let s= str["Techpile technology"]
+function demo()
+{
+var f=s[0];
+//var b=s[s.lenght-1];
+//document.write("the element is :"+a)
+document.write("the element is :"+s)
+}*/
+function demo()
+{
+var x=document.getElementById("txt1").value
+var len=x.length
+if(len<2)
+{
+alert("invalid inputted string")
+}
+else
+{
+//alert(x[0]+x[x.length-1])
+alert(x.charAt(0)+x.charAt(x.length-1))
+}
+}
+</script>
+</body>
+<html>

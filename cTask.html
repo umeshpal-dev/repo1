@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<select>
+<option>--SELECT TRAINING--</option>
+<option>--SUMMER TRAINING--</option>
+<option>--WINTER TRAINING--</option>
+<option>--APPRENTICESHIP TRAINING--</option>
+</select>
+<button onclick="demo()">SET background</button>
+<script>
+function demo()
+{
+var color=["red","green","yellow","aqua"]
+
+var sl=document.querySelectorAll("option")
+sl.forEach(function (x,i){
+x.style.background=color[i]
+})
+
+}
+</script>
+</body>
+</html>

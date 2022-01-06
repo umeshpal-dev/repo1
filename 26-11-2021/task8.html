@@ -1,0 +1,55 @@
+<html>
+<head>
+</head>
+<body>
+<img src="../image/1.jpg" height="200px;" id="im1">
+<img src="../image/2.jpg" height="200px;"id="im2">
+<img src="../image/3.jpg" height="200px;"id="im3">
+<img src="../image/4.jpg" height="200px;"id="im4">
+<img src="../image/5.jpg" height="200px;"id="im5">
+<img src="../image/6.jpg" height="200px;"id="im6">
+<img src="../image/7.jpg" height="200px;"id="im7">
+<img src="../image/8.jpg" height="200px;"id="im8">
+<img src="../image/9.jpg" height="200px;"id="im9">
+<img src="../image/10.jpg" height="200px;"id="im10">
+<button onclick="demo()">swap</button>
+
+
+<script>
+function demo()
+{
+var b1=document.getElementById("im1")
+var b2=document.getElementById("im2")
+var b3=document.getElementById("im3")
+var b4=document.getElementById("im4")
+var b5=document.getElementById("im5")
+var b6=document.getElementById("im6")
+var b7=document.getElementById("im7")
+var b8=document.getElementById("im8")
+var b9=document.getElementById("im9")
+var b10=document.getElementById("im10")
+var c1=b1.src;
+var c2=b2.src;
+var c3=b3.src;
+var c4=b4.src;
+var c5=b5.src;
+var c6=b6.src;
+var c7=b7.src;
+var c8=b8.src;
+var c9=b9.src;
+var c10=b10.src;
+b1.src=c2;
+b2.src=c3;
+b3.src=c4;
+b4.src=c5;
+b5.src=c6;
+b6.src=c7;
+b7.src=c8;
+b8.src=c9;
+b9.src=c10;
+b10.src=c1;
+}
+setInterval(demo,2000);
+</script>
+</body>
+</html>

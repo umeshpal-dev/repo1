@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<form onsubmit="return demo()">
+PASSWORD<br>
+<input type="password" id="txt1"><br>
+CONFIRM PASSWORD<br>
+<input type="password" id="txt2"><br>
+<input type="file" id="fle"><br>
+<input type="submit" value="save">
+<p></p>
+</form>
+</body>
+<script>
+var demo=()=>
+{
+var p1=document.getElementById("txt1")
+var p2=document.getElementById("txt2")
+
+var a=document.getElementById("fle")
+//alert(a.value)
+//var arr=a.split(".");
+//alert(arr.pop())
+var ext=a.value.substr(a.value.lastIndexOf('.')+1).toLowerCase();
+//alert(ext);
+var msg=document.querySelector("p")
+if(ext!="jpg" && ext!="jpeg" && ext!="png")
+{
+msg.innerText="please inter valid type of file";
+msg.style.color="red";
+return false;
+}
+else if(p1.value!=p2.value)
+{
+msg.innerText="password is not matched";
+msg.style.color="red";
+}
+}
+</script>
+</html>

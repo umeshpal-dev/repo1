@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+<fieldset style="width:500px;">
+<legend>LOGIN FORM</legend>
+USER NAME<br/>
+<input type="text" id="txt1"><br>
+PASSWORD <br/>
+<input type="password" id="txt2"><br/>
+<button onclick="demo()">Login</button>
+
+</fieldset>
+<script>
+function demo()
+{
+var u=document.getElementById("txt1").value.trim();
+var p=document.getElementById("txt2").value.trim();
+
+var usr="APP203750"
+var psw="TECHPILE@123"
+alert(u+" "+p)
+if(usr==u && psw==p)
+{
+alert("WELCOME TO DASHBOARD")
+window.location="demo50.html"
+}
+else
+{
+alert("invalid user name or password")
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+#dv1,#dv3
+{
+height:100px;
+width:100px;
+color:red;
+line-height:100px;
+float:left;
+border:10px solid purple;
+text-align:center;
+font-size:40px;
+
+}
+#dv2
+{
+height:100px;
+width:100px;
+color:red;
+line-height:100px;
+float:left;
+border:10px solid purple;
+text-align:center;
+font-size:40px;
+
+}
+</style>
+</head>
+<body>
+<div id="dv1">A</div>
+<div id="dv2">B</div>
+<div id="dv3">C</div>
+
+<button onclick="demo()">swap</button>
+<script>
+function demo()
+{
+var d1=document.getElementById("dv1")
+var d2=document.getElementById("dv2")
+var d3=document.getElementById("dv3")
+var txt1=d1.innerText;
+var txt2=d2.innerText;
+var txt3=d3.innerText;
+d1.innerText=txt2;
+d2.innerText=txt3;
+d3.innerText=txt1;
+}
+
+setInterval(demo,2000);
+
+
+
+
+</script>
+</body>
+</html>

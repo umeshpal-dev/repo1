@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+img
+{
+height:400px;
+width:600px;
+border:10px solid red;
+padding:10px;
+}
+</style>
+
+</head>
+<body>
+<center>
+<img src="../image/24.jpg" id="img1"><br>
+<button onclick="demo()">CALL ME </button>
+</center>
+<script>
+function demo()
+{
+var a=document.getElementById("img1")
+if(a.style.display=="none")
+{
+a.style.display="block";
+}
+else
+{
+a.style.display="none";
+}
+}
+</script>
+</body>
+</html>

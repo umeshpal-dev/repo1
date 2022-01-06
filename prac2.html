@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="txt">
+<button onclick="demo()">SAVE</button>
+<script>
+function demo()
+{
+var a=document.getElementById("txt").value
+var len=a.length
+if(len<3)
+{
+alert("invalid string")
+}
+else
+alert(a[0]+a[a.length-1])
+
+}
+</script>
+</body>
+</html>

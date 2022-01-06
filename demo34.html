@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+#imgbig
+{
+height:350px;
+width:750px;
+border:10px solid purple;
+padding:10px;
+margin-left:300px;
+}
+
+.imgs
+{
+height:200px;
+width:250px;
+border:5px solid purple;
+padding:5px;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;font-family:arial;">IMAGE GALLERY</h1>
+<img src="image/1.jpg" id="imgbig"><br/>
+<img src="image/2.jpg" onmouseover="demo(this)" class="imgs"style="margin-left:150px;">
+<img src="image/3.jpg" onmouseover="demo(this)" class="imgs">
+<img src="image/4.jpg" onmouseover="demo(this)" class="imgs">
+<img src="image/5.jpg" onmouseover="demo(this)" class="imgs">
+<script>
+function demo(x)
+{
+var im=document.getElementById("imgbig")
+im.src=x.src;
+}
+</script>
+</body>
+</html>

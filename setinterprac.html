@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+#box1
+{
+height:250px;
+width:250px;
+background:red;
+}
+</style>
+</body>
+<img src="image/32.jpg" height="400px" id="img1">
+<img src="image/44.jpg" height="400px" id="img2">
+<button onclick="demo()">print image path</button>
+<script>
+function demo()
+{
+var im=document.getElementById("img1")
+var im1=document.getElementById("img2")
+var path1=im.src;
+var path2=im1.src;
+im.src=path2;
+im1.src=path1;
+}
+</script>
+</html>

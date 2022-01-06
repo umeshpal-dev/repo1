@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+#box1
+{
+height:250px;
+width:250px;
+background:red;
+}
+</style>
+</body>
+<img src="image/32.jpg" height="400px" id="img1">
+<img src="image/44.jpg" height="400px" id="img2">
+<img src="image/30.jpg" height="400px" id="img3">
+<img src="image/31.jpg" height="400px" id="img4">
+
+<button onclick="demo()">print image path</button>
+<script>
+function demo()
+{
+var im1=document.getElementById("img1")
+var im2=document.getElementById("img2")
+var im3=document.getElementById("img3")
+var im4=document.getElementById("img4")
+var path1=im1.src;
+var path2=im2.src;
+var path3=im3.src;
+var path4=im4.src;
+im1.src=path2;
+im2.src=path3;
+im3.src=path4;
+im4.src=path1;
+setInterval(demo,2000);
+
+}
+
+</script>
+</html>

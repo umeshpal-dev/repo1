@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<script>
+var txt=document.getElementById("p1")
+var arr=["UP","MP","BIHAR"];
+var res="<select onchange='demo(this)'>"
+arr.forEach(function(a){
+res=res+"<option>"+a+"</option>"
+})
+res=res+"</select>"
+txt.innerHTML=res;
+
+/*function demo(x)
+{
+var p2=document.getElementById("p2")
+p2.innerHTML=res;
+}*/
+
+
+
+
+</script>
+</body>
+</html>

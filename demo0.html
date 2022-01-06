@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+div
+{
+height:400px;
+width:900px;
+border:10px solid purple;
+padding:10px;
+border-radius:5px;
+font-size:40px;
+line-height:400px;
+text-shadow:5px 5px 2px 5px red;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>IMAGE SLIDER</h1>
+<div id="dv" onclick="slider()">RAJESH</div>
+</center>
+<script>
+var i=0;
+function slider()
+{
+var arr=["Ramesh","Umesh","suresh"]
+var im=document.getElementById("dv")
+var res=""
+for (i=0;i<=arr.length-1;i++)
+{
+res+=res+arr[i];
+im.innerHTML=arr[i]+"<br>";
+}
+}
+//setInterval(slider,1000)
+</script>
+</body>
+</html>

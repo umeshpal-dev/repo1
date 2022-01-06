@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+img
+{
+height:400px;
+width:900px;
+border:10px solid green;
+padding:10px;
+}
+</style>
+</head>
+<body>
+<center>
+<img src="../image/2.jpg" id="img1">
+<button onclick="demo1()" ondblclick="demo2()">STOP</button>
+</center>
+<script>
+var arr=["5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg"]
+var i=0;
+function demo()
+{
+var a=document.getElementById("img1")
+a.src="../image/"+arr[i]
+i++;
+if(i==arr.length)
+i=0;
+}
+
+var a1=setInterval(demo,2000);
+
+function demo1()
+{
+clearInterval(a1)
+}
+
+
+
+</script>
+</body>
+
+</html>

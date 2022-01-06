@@ -1,0 +1,35 @@
+<html>
+<head>
+
+</head>
+<body>
+<input type="text" id="txt1"><br/>
+<br/>
+
+<input type="tex" id="txt2"><br/>
+<input type="tex" id="txt3" >
+
+<button onclick="demo()">ADD
+</button>
+<script>
+function demo()
+{
+var name1=document.getElementById("txt1").value
+var name2=document.getElementById("txt2").value
+var x=document.getElementById("txt3")
+if(name1==name2)
+{
+var res=parseInt(name1)+parseInt(name2)
+x.value=res;
+}
+else
+{
+var res=parseInt(name1)*parseInt(name2)
+x.value=res;
+}
+}
+
+
+</script>
+</body>
+</html>

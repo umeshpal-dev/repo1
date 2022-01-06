@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<div id="dv" style="background:red;"></div>
+<button onclick="demo()">print</button>
+<script>
+function demo()
+{
+var num=document.getElementById("dv");
+var res=""
+for(i=1;i<=1000;i++)
+{
+if(i%2==0)
+{
+res+=res+i;
+document.write("<br/>"+i);
+}
+}
+}
+</script>
+</body>
+</html>

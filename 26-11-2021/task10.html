@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+<textarea id="txt1"></textarea><br>
+<textarea id="txt2"></textarea><br>
+<textarea id="txt3"></textarea><br>
+<textarea id="txt4"></textarea><br>
+<textarea id="txt5"></textarea><br>
+<button onclick="demo1()"> swap</button>
+<script>
+function demo1()
+{
+var a1=document.getElementById("txt1")
+var a2=document.getElementById("txt2")
+var a3=document.getElementById("txt3")
+var a4=document.getElementById("txt4")
+var a5=document.getElementById("txt5")
+
+var c1=a1.value;
+var c2=a2.value;
+var c3=a3.value;
+var c4=a4.value;
+var c5=a5.value;
+a1.value=c2;
+a2.value=c3;
+a3.value=c4;
+a4.value=c5;
+a5.value=c1;
+setInterval("demo1()",5000);
+
+.
+}
+
+
+</script>
+</body>
+</html>

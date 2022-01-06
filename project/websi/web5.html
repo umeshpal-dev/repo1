@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Website tasks</title>
+    <link href="../fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <style>
+        #outer {
+            min-height: 1500px;
+            width: 100%;
+            background: #F1F1F1;
+            border: 1px solid #F1F1F1;
+            box-sizing: border-box;
+        }
+        
+        #D1 {
+            min-height: 45px;
+            width: 100%;
+            background: rgb(27, 27, 27);
+        }
+        
+        #D2 {
+            min-height: 100px;
+            width: 100%;
+            background: #F1F1F1;
+        }
+        
+        #D3 {
+            min-height: 50px;
+            width: 100%;
+            background: rgb(27, 27, 27);
+        }
+        
+        #D4 {
+            min-height: 200px;
+            width: 100%;
+            background: url('../websi/img1.jpg');
+            background-size: 99% 30%;
+            animation-name: slider;
+            animation-duration: 5s;
+            background-attachment: fixed;
+            animation-iteration-count: infinite;
+            transition: all ease 5s;
+        }
+        
+        #D5 {
+            min-height: 35px;
+            width: 100%;
+            background: linear-gradient(40deg, #F18B37, #E15B35, #ec3603);
+        }
+        
+        #D7 {
+            min-height: 100px;
+            width: 100%;
+            font-size: 22px;
+            text-align: center;
+            background: #F1F1F1;
+            word-spacing: 7px;
+        }
+        
+        #line {
+            height: 4px;
+            width: 100px;
+            background: #F18B37;
+            margin-left: 600px;
+        }
+        
+        #D14 {
+            min-height: 50px;
+            width: 100%;
+            color: #FFFFFF;
+            font-size: 16px;
+            text-align: center;
+            line-height: 50px;
+            background: rgb(27, 27, 27);
+        }
+        
+        .dleft {
+            min-height: 45px;
+            width: 65%;
+            background: rgb(27, 27, 27);
+            float: left;
+        }
+        
+        .dright {
+            min-height: 45px;
+            width: 35%;
+            background: rgb(27, 27, 27);
+            float: left;
+            color: white;
+            font-size: 20px;
+            line-height: 45px;
+            word-spacing: 10px;
+        }
+        
+        #sp {
+            min-height: 45px;
+            width: 20px;
+            background: none;
+            float: left;
+        }
+        
+        #sp1 {
+            min-height: 45px;
+            width: 60px;
+            background: none;
+            float: left;
+        }
+        
+        #search {
+            height: 35px;
+            width: 220px;
+            background: white;
+            border: 1px solid white;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-top: 5px;
+            margin-right: 25px;
+            box-sizing: border-box;
+            color: gray;
+            float: right;
+        }
+        
+        .tbox {
+            min-width: 100px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 10px;
+            font-size: 15px;
+            float: left;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        
+        .tbox1 {
+            min-width: 100px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 10px;
+            font-size: 15px;
+            float: left;
+            color: whitesmoke;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        #D2left {
+            height: 100px;
+            width: 30%;
+            background: url('../websi/studyindia.jpg');
+            background-size: cover;
+            float: left;
+        }
+        
+        #D2right {
+            height: 100px;
+            width: 70%;
+            float: left;
+            background: #FFFFFF;
+        }
+        
+        #block {
+            height: 100px;
+            width: 26%;
+            float: left;
+            margin-left: 57px;
+            background: none;
+        }
+        
+        #block3 {
+            height: 100px;
+            width: 26%;
+            float: left;
+            margin-left: 57px;
+            background: url('../websi/ministry-of-education.png');
+            background-size: cover;
+        }
+        
+        #icon {
+            height: 25px;
+            width: 10%;
+            float: left;
+            background: #ffffff;
+            text-align: center;
+            color: #F18A3F;
+            font-size: 25px;
+            margin-top: 35px;
+        }
+        
+        #icon2 {
+            height: 100px;
+            width: 90%;
+            padding-top: 30px;
+            box-sizing: border-box;
+            float: left;
+            background: #ffffff;
+            text-align: center;
+        }
+        
+        #D6 {
+            min-height: 150px;
+            width: 100%;
+            background: #F1F1F1;
+        }
+        
+        #dblok7 {
+            min-height: 100px;
+            width: 19%;
+            background: #f56b2b;
+            float: left;
+            margin-right: 5px;
+        }
+        
+        #up {
+            height: 50px;
+            width: 100%;
+            color: rgb(240, 238, 235);
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 50px;
+            font-family: 'Times New Roman';
+            text-transform: uppercase;
+        }
+        
+        #down {
+            height: 50px;
+            width: 100%;
+            color: rgb(219, 218, 215);
+            font-size: 50px;
+        }
+        
+        #dblok6 {
+            min-height: 140px;
+            width: 19%;
+            background: #F18B37;
+            float: left;
+            margin-right: 5px;
+        }
+        
+        #study {
+            min-height: 30px;
+            width: 100%;
+            background: #F1F1F1;
+            color: rgb(92, 89, 89);
+            text-align: center;
+            font-size: 20px;
+            line-height: 30px;
+            word-spacing: 5px;
+        }
+        
+        #step {
+            min-height: 30px;
+            width: 100%;
+            background: #F1F1F1;
+            color: rgb(26, 25, 25);
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Times New Roman';
+            line-height: 30px;
+            word-spacing: 5px;
+        }
+        
+        #D8 {
+            min-height: 200px;
+            width: 100%;
+            background: none;
+        }
+        
+        #dblock {
+            height: 200px;
+            width: 415px;
+            background: #F1F1F1;
+            float: left;
+            margin-right: 25px;
+            box-shadow: 1px 1px 2px 8px #F1F1F1;
+            border-radius: 5px;
+        }
+        
+        #dup {
+            height: 130px;
+            width: 415px;
+            background: none;
+        }
+        
+        #ddown {
+            height: 70px;
+            width: 415px;
+        }
+        
+        #dup img {
+            height: 130px;
+            width: 415px;
+        }
+        
+        #D9 {
+            min-height: 200px;
+            width: 100%;
+            background: linear-gradient(40deg, #F18B37, #E15B35, #ec3603);
+        }
+        
+        .d9up {
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Times New Roman';
+            line-height: 50px;
+            color: #FFFFFF;
+            word-spacing: 10px;
+        }
+        
+        #d9down {
+            height: 150px;
+            width: 100%;
+            text-align: right;
+            font-size: 24px;
+            font-family: 'Times New Roman';
+            line-height: 50px;
+            color: #FFFFFF;
+            word-spacing: 10px;
+        }
+        
+        #d91 {
+            height: 150px;
+            width: 500px;
+            text-align: right;
+            font-size: 20px;
+            font-family: 'Times New Roman';
+            line-height: 50px;
+            font-weight: bold;
+            border-left: 5PX solid white;
+            box-sizing: border-box;
+            float: left;
+            color: #FFFFFF;
+            word-spacing: 10px;
+        }
+        
+        #d92 {
+            height: 150px;
+            width: 300px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Times New Roman';
+            line-height: 50px;
+            float: left;
+            color: #FFFFFF;
+            font-weight: bold;
+            word-spacing: 10px;
+        }
+        
+        #d93 {
+            height: 150px;
+            width: 500px;
+            text-align: left;
+            padding-left: 20px;
+            font-size: 20px;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            line-height: 50px;
+            float: left;
+            color: #FFFFFF;
+            word-spacing: 10px;
+            margin-left: 10px;
+            box-sizing: border-box;
+        }
+        
+        #white {
+            height: 100px;
+            width: 4px;
+            background: #FFFFFF;
+            float: left;
+        }
+        
+        #D10 {
+            min-height: 400px;
+            width: 100%;
+            background: #F1F1F1;
+        }
+        
+        .row {
+            height: 150px;
+            width: 100%;
+            background: none;
+            margin-top: 5px;
+        }
+        
+        .block10 {
+            height: 150px;
+            width: 430px;
+            border-left: 1px solid gray;
+            border-bottom: 1px solid gray;
+            box-sizing: border-box;
+            float: left;
+        }
+        
+        .block101 {
+            height: 150px;
+            width: 430px;
+            border-bottom: 1px solid gray;
+            box-sizing: border-box;
+            float: left;
+        }
+        
+        .block1 {
+            height: 150px;
+            width: 430px;
+            border-left: 1px solid gray;
+            box-sizing: border-box;
+            float: left;
+        }
+        
+        .block11 {
+            height: 150px;
+            width: 430px;
+            box-sizing: border-box;
+            float: left;
+        }
+        
+        .d10up {
+            min-height: 50px;
+            width: 100%;
+            font-size: 28px;
+            line-height: 50px;
+            text-align: center;
+            color: #5F6386;
+            word-spacing: 7px;
+        }
+        
+        #line2 {
+            height: 4px;
+            width: 100px;
+            background: #f1f0ef;
+            margin-left: 600px;
+            margin-top: 10px;
+        }
+        
+        #D11 {
+            min-height: 75px;
+            width: 100%;
+            background: linear-gradient(40deg, #F18B37, #E15B35, #ec3603);
+            border: 1px solid #F18B37;
+            box-sizing: border-box;
+        }
+        
+        .d9up2 {
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Times New Roman';
+            line-height: 50px;
+            color: #FFFFFF;
+            word-spacing: 10px;
+        }
+        
+        #D13 {
+            min-height: 300px;
+            width: 100%;
+            background: #FFFFFF;
+            border: 1px solid white;
+        }
+        
+        #D13 ul li {
+            font-size: 15px;
+            color: #C7C8CA;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            line-height: 29px;
+        }
+        
+        #f1 ul li {
+            font-size: 15px;
+            color: #C7C8CA;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            line-height: 29px;
+            list-style: none;
+        }
+        
+        #f1 {
+            min-height: 300px;
+            width: 405px;
+            float: left;
+        }
+        
+        .d13up {
+            height: 100px;
+            width: 100%;
+            background: url('../websi/studyindia.jpg');
+            background-size: cover;
+        }
+        
+        .d13up2 {
+            height: 100px;
+            width: 100%;
+            font-size: 20px;
+            color: #5F6386;
+            text-align: left;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+        
+        #f2 {
+            min-height: 300px;
+            width: 250px;
+            float: left;
+        }
+        
+        #follow {
+            height: 100px;
+            width: 100%;
+            font-size: 20px;
+            color: #070707;
+        }
+        
+        .left10 {
+            height: 150px;
+            width: 150px;
+            float: left;
+            background-size: cover;
+            background: none;
+        }
+        
+        .left10 img {
+            background-size: cover;
+            height: 150px;
+            width: 150px;
+        }
+        
+        .rightt10 {
+            height: 150px;
+            width: 275px;
+            float: left;
+            background: none;
+            font-size: 18px;
+            color: rgb(75, 73, 73);
+            padding-left: 5px;
+            box-sizing: border-box;
+        }
+        
+        .btn {
+            text-align: right;
+            background: #F18B37;
+            float: right;
+            border-radius: 10px;
+            transition: all ease 2s;
+        }
+        
+        .btn:hover {
+            background: rgb(23, 150, 209);
+            transform: scale(1.5);
+            transition: all ease 2s;
+        }
+        
+        .newbtn {
+            background: #F18B37;
+            text-align: center;
+            color: #ffffff;
+            float: right;
+            height: 40px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transform: translateY(-50px);
+            margin-right: 20px;
+            transition: all ease 2s;
+        }
+        
+        .newbtn:hover {
+            background: rgb(23, 150, 209);
+            transform: translateY(-80px);
+            height: 55px;
+            transition: all ease 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="D1">
+            <div class="dleft">
+                <div class="tbox">Student login/Apply</div>
+                <div class="tbox">Institute Login</div>
+                <div class="tbox">Channel</div>
+                <div class="tbox">Contest</div>
+                <div class="tbox">FAQ's</div>
+                <div class="tbox">Neewsfeed</div>
+                <div class="tbox">New Institute </div>
+
+            </div>
+            <div class="dright">
+                <div id="sp1"></div>
+                <i class="fab fa-facebook"></i>
+                <div id="sp"></div><i class="fab fa-twitter"></i>
+                <div id="sp"></div><i class="fab fa-instagram-square"></i>
+                <div id="search"><i class="fas fa-search"></i> Search...</div>
+            </div>
+        </div>
+        <div id="D2">
+            <div id="D2left"></div>
+            <div id="D2right">
+                <div id="block">
+                    <div id="icon"><i class="fas fa-phone-square-alt"></i></div>
+                    <div id="icon2">For any Support Dial Our<br>TOLL FREE +91 120-6565065</div>
+                </div>
+                <div id="block">
+                    <div id="icon"><i class="fas fa-envelope"></i> </div>
+                    <div id="icon2">Email US now<br><b>help.studyinindia@gov.in</b></div>
+
+                </div>
+                <div id="block3">
+
+                </div>
+            </div>
+        </div>
+        <div id="D3">
+            <div class="tbox1">Home</div>
+            <div class="tbox1">Why INDIA</div>
+            <div class="tbox1">Plan Your Studies</div>
+            <div class="tbox1">Buddhism</div>
+            <div class="tbox1">Scholorship And Waiver</div>
+            <div class="tbox1">Plan Your Stay</div>
+            <div class="tbox1">Pragati</div>
+            <div class="tbox1">Blog</div>
+            <div class="tbox1">Contact</div>
+            <div class="tbox1">About</div>
+        </div>
+        <div id="D4"></div>
+        <div id="D5"></div>
+        <div id="D6">
+            <div id="study">Study in india</div>
+            <div id="step">5 Step to study in India</div>
+            <div id="dblok7">
+                <div id="up">register<br>here</div>
+                <div id="down"><i class="far fa-arrow-alt-circle-right"></i></div>
+            </div>
+            <div id="dblok6">
+                <div id="up">plan your<br>budget</div>
+                <div id="down"><i class="far fa-arrow-alt-circle-right"></i></div>
+            </div>
+            <div id="dblok6">
+                <div id="up">submit<br>application</div>
+                <div id="down"><i class="far fa-arrow-alt-circle-right"></i></div>
+            </div>
+            <div id="dblok7">
+                <div id="up">check<br>result</div>
+                <div id="down"><i class="far fa-arrow-alt-circle-right"></i></div>
+            </div>
+            <div id="dblok6">
+                <div id="up">plan for <br>departure</div>
+                <div id="down"><i class="far fa-arrow-alt-circle-right"></i></div>
+            </div>
+        </div>
+        <div id="D7">Your Reason To Be Here
+            <div id="line"></div><input type="button" value=" Student Login" class="newbtn"><input type="button" value=" Register Now" class="newbtn">
+        </div>
+        <div id="D8">
+            <div id="dblock">
+                <div id="dup"><img src="../websi/bigstock-Diverse-Group-Of-Kids-Study-Re-186016885.jpg"></div>
+                <div id="ddown"><b>Why INDIA?</b><br>Whether Your passion is the constructs of technology or the basis of traditional medicine-india is a land where may fields,old and new, find representation.<input type="button" value=" Read more" style="background: #F18B37;  border-radius: 20px; align-tracks: right;"></div>
+            </div>
+            <div id="dblock">
+                <div id="dup"><img src="../websi/iStock_Group_Students_Walking_Outside_XXXLarge-1-1200x800.jpg"></div>
+                <div id="ddown"><b>SEE WHAT PEOPLE ARE SAYING</b><br>Gain access to premier colleges in the country via your Study in india account sign up and fill the student registration from below.<input type="button" value=" Read more" style="background: #F18B37;  border-radius: 20px; align-tracks: right;"></div>
+            </div>
+            <div id="dblock">
+                <div id="dup"><img src="../websi/College-Backgrounds.jpg"></div>
+                <div id="ddown"><b>PARTICIPATING INSTITUTIONS & COURSES</b><br>Locate and interact with partner institutes across the country.<input type="button" value=" Read more" class="btn" style="background: #F18B37;  border-radius: 20px; align-tracks: right;"></div>
+            </div>
+        </div>
+        <div id="D9">
+            <div class="d9up">Our Institute and Courses</div>
+            <div id="d9down">
+                <div id="d91">
+                    <b style="font-size: 35px; margin-left: 300px;">100+</b><br>NO. OF INSTITUTES</div>
+                <div id="white"></div>
+                <div id="d92"><b style="font-size: 35px; margin-left: 20px;">2600+</b>
+
+                    <BR>NO. OF COURSES</div>
+                <div id="white"></div>
+                <div id="d93"><b style="font-size: 35px; margin-left: 50px;">422001</b>
+                    <BR>REGISTRATION</div>
+            </div>
+        </div>
+        <div id="D10">
+            <div class="d10up">Towards Higher Education</div>
+            <div id="line"></div>
+            <div class="row">
+                <div class="block101">
+                    <div class="left10"><img src="../websi/bigstock-Diverse-Group-Of-Kids-Study-Re-186016885.jpg"></div>
+                    <div class="rightt10">
+                        <b style="font-size: 20px; color: black;">PLAN YOUR FINANCE</b>
+                        <BR>Get updated on the scope of study in India-from the merits of each institute to the ones suited to your passion explore the indian education system.<br><input type="button" value=" Read more" class="btn"></div>
+                </div>
+                <div class="block10">
+                    <div class="left10"><img src="../websi/c9f46282af22e94b3502e3aefb93fc99.jpg"></div>
+                    <div class="rightt10"><b style="font-size: 20px; color: black;">EXPLORE YOUR COURSES</b>
+                        <BR>Choose world class education offered by our partner institution with courses that specialize in a number of fields. find the perfect fit for your passion.<br><input type="button" class="btn" value=" Read more"></div>
+                </div>
+                <div class="block10">
+                    <div class="left10"><img src="../websi/College-Backgrounds.jpg"></div>
+                    <div class="rightt10"><b style="font-size: 20px; color: black;">RANKING AND ACCREDITATION</b> Find out how the education system works in the country with information on.3 universities, their ranking and .certifications to help your search.<br><input type="button"
+                            value=" Read more" class="btn"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="block11">
+                    <div class="left10"><img src="../websi/img1.jpg"></div>
+                    <div class="rightt10"><b style="font-size: 20px; color: black;">VISA</b><br>Plan your education in INDIA with information on the eligibility requirements and procedures for student visas in the country.<br><input type="button" class="btn" value=" Read more"></div>
+                </div>
+                <div class="block1">
+                    <div class="left10"><img src="../websi/lecture-hall-filer.jpg"></div>
+                    <div class="rightt10"><b style="font-size: 20px; color: black;">TRAVEL</b><br>From one end of the country to another or even beyond border-india is well connected by air road and rail at budget friendly rates.
+                        <BR><input type="button" class="btn" value=" Read more"></div>
+                </div>
+                <div class="block1">
+                    <div class="left10"><img src="../websi/male-student-studying-min.jpg"></div>
+                    <div class="rightt10"><b style="font-size: 20px; color: black;">NEWS BOARD</b>
+                        <BR>keep up with the latest happening & opinions of INDIA. feel the pulse of the country. ITS people & their outlook as you decides to study in india.<br><input type="button" class="btn" value=" Read more"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="D11">
+            <div id="line2"></div>
+            <div class="d9up2">Student Testimonals</div>
+        </div>
+        <div class="d10up">BLOG</div>
+        <div id="D13">
+            <div id="f1">
+                <div class="d13up"></div>
+                <div class="d13up2">Education is emerging to be one fo the top focuses of all the devloping nation arround<br> the world.</div>
+                <div id="follow"> Follow Us on<br><i class="fab fa-facebook"></i>
+                    <div id="sp"></div><i class="fab fa-twitter"></i>
+                    <div id="sp"></div><i class="fab fa-instagram-square"></i></div>
+            </div>
+            <div id="f2">
+                <h3>Programme</h3><br>
+                <UL style="list-style: square;">
+                    <li>UNDER GRADUATE</li>
+                    <li>POST GRADUATE</li>
+                    <li>PHD</li>
+                </UL>
+            </div>
+            <div id="f2"><b>IMPORTANT LINK</b>
+                <UL style="list-style: square;">
+                    <li>HOME</li>
+                    <li>INDIAN EDUCATION SYSTEM</li>
+                    <li>VISA RULE</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>EVENT</li>
+                </UL>
+            </div>
+            <div id="f1">
+                <B>CONTACT</B>
+                <ul>
+                    <li><i class="fas fa-building"></i>EDCIL(INDIA) LIMITED
+                        <BR>(A MINIRATNA CPSE UNDER MINISTRY OF EDUCATION, GOVT OF INDIA)</li>
+                    <LI><i class="fas fa-map-marker-alt"></i> EDCIL HOUSE, 18A, SECTOR 16A,NOIDA,
+                        <BR>UTTAR PRADESH-201301(INDIA)</LI>
+                    <LI style="color: rgb(12, 12, 12); font-weight: bolder;"><i class="fas fa-phone-square-alt"></i> +91120-6565065</LI>
+                    <LI style="color: blue;"><i class="fas fa-comment-dots"></i> FACEBOOK MESSENDER</LI>
+                    <LI style="color: blue;"><i class="fas fa-envelope"></i> help.studyinindia@goc.in</LI>
+                </ul>
+
+            </div>
+        </div>
+        <div id="D14"><i class="far fa-copyright"></i>2018 implemented by Edcil(INDIA_)limited</div>
+
+    </div>
+
+</body>
+
+</html>

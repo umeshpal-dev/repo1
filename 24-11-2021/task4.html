@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+.box
+{
+height:100px;
+width:200px;
+background:aqua;
+float:left;
+margin-left:5px;
+}
+</style>
+</head>
+<body>
+<div  class="box" id="h1">TECHPILE TECHNOLOGY</div>
+<div  class="box" id="h2">WELCOME TO THE JS</div>
+<div  class="box" id="h3">WELCOMET TO THE CSS</div>
+<div  class="box" id="h4">Hello guy's</div>
+<div  class="box" id="h5">HONESTY IS THE BEST POLICY</div>
+
+
+
+<br>
+<button onclick="show()">SWAP</button>
+<script>
+function show()
+{
+var a=document.getElementById("h1")
+var b=document.getElementById("h2")
+var a1=a.innerText
+var b1=b.innerText
+a.innerText=b1
+b.innerText=a1
+
+var c=document.getElementById("h2")
+var d=document.getElementById("h3")
+var c1=c.innerText
+var d1=d.innerText
+c.innerText=d1
+d.innerText=c1
+
+var e=document.getElementById("h3")
+var f=document.getElementById("h4")
+var e1=c.innerText
+var f1=d.innerText
+e.innerText=f1
+f.innerText=e1
+
+var g=document.getElementById("h4")
+var h=document.getElementById("h5")
+var g1=c.innerText
+var h1=h.innerText
+g.innerText=h1
+h.innerText=g1
+}
+
+</script>
+</body>
+</html>

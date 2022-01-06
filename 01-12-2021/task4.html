@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#outer
+{
+height:300px ;
+width:900px;
+background:red;
+margin-top:150px;
+}
+
+.inner
+{
+height:300px;
+width:300px;
+float:left;
+background:yellow;
+color:maroon;
+border:10px solid black;
+box-sizing:border-box;
+font-family:impact;
+font-size:40px;
+line-height:300px;
+}
+</style>
+</head>
+<body>
+<center>
+<div id="outer">
+<div id="h" class="inner">HH</div>
+<div id="m" class="inner">MM</div>
+<div id="s" class="inner">SS</div>
+</div>
+<button onclick="demo1()">START</button>
+<button onclick="demo2()">STOP</button>
+
+</center>
+<script>
+var hh=0;
+var mm=0;
+var ss=0;
+function demo()
+{
+var s=document.getElementById("s")
+var m=document.getElementById("m")
+var h=document.getElementById("h")
+ss++;
+if(ss>=60)
+{
+ss=0;
+mm++;
+
+if(mm>=60)
+{
+mm=0;
+hh++;
+}
+}
+s.innerText=ss;
+m.innerText=mm;
+h.innerText=hh;
+}
+
+function demo1()
+{
+a=setInterval(demo,10)
+}
+function demo2()
+{
+window.clearInterval(a)
+}
+</script>
+</body>
+</html>
